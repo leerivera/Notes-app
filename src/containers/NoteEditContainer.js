@@ -10,6 +10,7 @@ export const NoteEditContainer = ({ fetchNoteDetail, match, activeNote, updateNo
   useEffect(() => {
     const noteId = match.params.id
     fetchNoteDetail(noteId)
+    // eslint-disable-next-line
   }, [])
   console.log('updated', updated)
   if (updated) return <Redirect push to="/" />

@@ -8,6 +8,7 @@ export const NoteDetailContainer = ({ fetchNoteDetail, match, activeNote }) => {
   useEffect(() => {
     const noteId = match.params.id
     fetchNoteDetail(noteId)
+    // eslint-disable-next-line
   }, [])
   return (
     <Layout>

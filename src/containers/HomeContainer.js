@@ -9,6 +9,7 @@ import { fetchNotes, addNote, removeNote } from '../redux/ducks/notes'
 export const HomeContainer = ({ created, notes, fetchNotes, addNote, removeNote }) => {
   useEffect(() => {
     fetchNotes()
+    // eslint-disable-next-line
   }, [created])
 
   return (
