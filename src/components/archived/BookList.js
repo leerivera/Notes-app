@@ -27,6 +27,7 @@ class BookList extends Component {
     fetch(books_api_URL)
       .then((response) => response.json())
       .then((response_books) => {
+        console.log('yoo==>>>', response_books)
         this.setState({
           books: response_books
         })

@@ -66,7 +66,8 @@ export const addNote = (note) => {
     try {
       const res = await axios.post(API_BASE + '/notes', note)
       dispatch(noteAddSuccess(res.data))
-
+      //window.location.reload();
+      ////dispatch(fetchNotes())
       return Promise.resolve(res.data)
     } catch (err) {
       dispatch(noteAddError(err))
